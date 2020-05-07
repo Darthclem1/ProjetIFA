@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projet IFA</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("a").on('click', function(event) {
+
+				if (this.hash !== "") {
+					event.preventDefault();
+
+					var hash = this.hash;
+
+
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 500, function() {
+
+
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="cbp-af-header">
+			<div class="cbp-af-inner">
+				<h1>Projet IFA</h1>
+				<nav>
+					<a href="#accueil">Accueil</a>
+					<a href="#projet">Projet</a>
+					<a href="#organisation">Organisation</a>
+					<a href="#conclusion">Conclusion</a>
+				</nav>
+			</div>
+		</div>
+
+		<header class="clearfix">
+			<span>Mattéo Fernandes, Edgar Delprat, Clément Deconquand </span>
+			<h1 id="accueil">Gestionnaire de stock</h1>
+			<div class="fde">
+				<img src="css/photoaccueil.png" alt="Screenshot projet">
+
+			</div>
+		</header>
+		<div class="main">
+
+
+			<section>
+				<div>
+					<p>Ce projet avait pour but de nous faire découvrir la programmation, en particulier sur VBA, au travers de la création d'un programme de notre choix.</p>
+				</div>
+			</section>
+			<section id="projet">
+				<div>
+					<p>Nous avons donc choisi de réaliser un gestionnaire de stock pour la société <br> <a href="http://www.delprat-sa.fr/" onclick="window.open(this.href); return false;">SA Delprat</a>, quincaillerie bourguignogne, qui a besoin d'un logiciel basique pour la gestion d'une partie de ses stocks.</p>
+					<!--<div class="magasin">
+						<img src="css/Delpratmagasin.jpg" alt="Devanture Delprat">
+					</div>-->
+					<p> La société nous a demandé que le programme réponde aux critères suivants :</p>
+					<ul>
+						<li>Qu'il affiche l'état des stocks</li>
+						<li>Qu'il affiche un descriptif détaillé du produit</li>
+						<li>Qu'il dispose d'une session par vendeur</li>
+						<li>Que le vendeur puisse facilement modifier la base de donnée</li>
+					</ul>
+					<p> Vous pouvez télécharger notre projet ci-dessous :</p>
+					<div id="dwl">
+						<p><a href="#">Télécharger le programme</a></p>
+					</div>
+				</div>
+			</section>
+			<section id="organisation">
+				<div>
+					<p class="souligner">Les tâches au sein du projet se sont réparties de la manière suivante:</p>
+					<h2>Mattéo Fernandes :</h2>
+					<p>S'est occupé de la structure du code en VBA et de l'architecture du document.</p>
+					<h2>Clément Deconquand :</h2>
+					<p>A pris en charge la création du site internet découvrant ainsi le HTML, le CSS et le Javascript.</p>
+					<h2>Edgar Delprat :</h2>
+					<p>Ayant déja des bases en VBA et en HTML, Edgar s'est occupé d'aider à la programmation et de la liaison avec le site. Il s'est aussi chargé de la mise en ligne du site sur son serveur.</p>
+				</div>
+			</section>
+			<section id="conclusion">
+				<div>
+
+					<p>Ce projet a été vraiment enrichissant pour nous trois. Il nous a permis de développer nos compétences en programmation. Nous avons rencontré quelques difficultés sur la partie Javascript et la barre de recherche dans le fichier excel, mais malgré cela nous avons réussi à mener notre projet à terme.</p>
+				</div>
+			</section>
+			<section>
+				<div>
+					<h2>Les auteurs du projet :</h2>
+
+					<div class="card">
+						<img src="css/matteo.jpg" alt="Mattéo">
+						<h1>Mattéo Fernandes</h1>
+						<p class="title">Ingénieur en formation</p>
+						<p>UTBM</p>
+
+						<p><button><a href="mailto:matteo.fernandes@utbm.fr">matteo.fernandes@utbm.fr</a></button></p>
+					</div>
+					<div class="card">
+						<img src="css/clement.jpg" alt="Clément">
+						<h1>Clément Deconquand</h1>
+						<p class="title">Ingénieur en formation</p>
+						<p>UTBM</p>
+
+						<p><button><a href="mailto:clement.deconquand@utbm.fr">clement.deconquand@utbm.fr</a></button></p>
+					</div>
+					<div class="card">
+						<img src="css/edgar.jpg" alt="Edgar">
+						<h1>Edgar Delprat</h1>
+						<p class="title">Ingénieur en formation</p>
+						<p>UTBM</p>
+
+						<p><button><a href="mailto:edgar.delprat@utbm.fr">edgar.delprat@utbm.fr</a></button></p>
+					</div>
+				</div>
+			</section>
+
+
+		</div>
+
+
+		<script src="js/classie.js"></script>
+		<script src="js/cbpAnimatedHeader.min.js"></script>
+
+</body>
+
+</html>
